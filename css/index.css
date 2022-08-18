@@ -101,3 +101,61 @@ nav img {
   bottom: 30%;
   left: 6%;
 }
+
+#mobileMenu {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 10px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+  #mobileMenu {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .vector-img,
+  .vector-dot {
+    display: none;
+  }
+
+  .left-section {
+    padding: 20px;
+    margin-top: 25px;
+    width: 100%;
+  }
+
+  .left-section h1 {
+    margin-bottom: 40px;
+    font-size: 36px;
+  }
+
+  .left-section h4 {
+    margin-bottom: 45px;
+  }
+
+  .main-div {
+    height: 100vh;
+  }
+
+  .intro-section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .imgs-div {
+    order: -1;
+  }
+
+  .imgs-div img:last-of-type {
+    width: 100vw;
+  }
+}
